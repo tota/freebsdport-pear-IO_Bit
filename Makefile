@@ -8,6 +8,9 @@
 PORTNAME=	IO_Bit
 PORTVERSION=	2.0.6
 CATEGORIES=     devel pear
+MASTER_SITES=	http://openpear.org/get/ \
+		LOCAL
+MASTER_SITE_SUBDIR=	tota/${PKGNAMEPREFIX}${PORTNAME}
 
 MAINTAINER=	yoya@awm.jp
 COMMENT=	PEAR bit utility
