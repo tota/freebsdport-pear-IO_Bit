@@ -6,7 +6,7 @@
 #
 
 PORTNAME=	IO_Bit
-PORTVERSION=	2.0.6
+PORTVERSION=	2.0.7
 CATEGORIES=     devel pear
 MASTER_SITES=	http://openpear.org/get/ \
 		LOCAL
@@ -17,7 +17,11 @@ COMMENT=	PEAR bit utility
 
 LICENSE=	MIT
 
+BUILD_DEPENDS=	${PEARDIR}/.channels/openpear.org.reg:${PORTSDIR}/devel/pear-channel-openpear
+RUN_DEPENDS:=	${BUILD_DEPENDS}
+
 USE_PHP=	yes
+PEAR_CHANNEL=	openpear
 PEAR_AUTOINSTALL=	yes
 
 .include <bsd.port.pre.mk>
