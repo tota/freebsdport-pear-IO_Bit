@@ -11,6 +11,7 @@ CATEGORIES=     devel pear
 MASTER_SITES=	http://openpear.org/get/ \
 		LOCAL
 MASTER_SITE_SUBDIR=	tota/${PKGNAMEPREFIX}${PORTNAME}
+PKGNAMEPREFIX=	pear-
 
 MAINTAINER=	yoya@awm.jp
 COMMENT=	PEAR bit utility
